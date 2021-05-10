@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurants.MainActivity"
+    android:background="@color/lightblack"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="107dp"
+        android:background="@color/whitesmoke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="3dp"
+        />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:ems="10"
+        android:hint="@string/search_here"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/locationBar"
+        android:layout_width="100dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/location"
+        app:layout_constraintStart_toEndOf="@+id/searchBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:drawableStart="@drawable/ic_baseline_navigation_24"
+        android:drawableLeft="@drawable/ic_baseline_navigation_24"
+        />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:src="@drawable/ic_baseline_restaurant_menu_24"
+        app:layout_constraintStart_toEndOf="@+id/locationBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="1dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/burgerFrame"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        android:paddingBottom="3dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/burgerIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/burger"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/burgerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:text="@string/burger" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/chineseFrame"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/burgerFrame"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        android:paddingBottom="3dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/chineseIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/chinese"
+            android:layout_marginTop="17dp"
+            />
+
+        <TextView
+            android:id="@+id/chineseTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chinese"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pizzaFrame"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/chineseFrame"
+        app:layout_constraintTop_toBottomOf="@+id/searchBar"
+        android:paddingBottom="3dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/pizzaIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/pizza"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/pizzaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza"
+            android:layout_gravity="start"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/indianFrame"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/pizzaFrame"
+        app:layout_constraintTop_toBottomOf="@+id/locationBar"
+        android:layout_margin="5dp"
+        android:paddingBottom="3dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/indianIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/indian"
+            android:layout_marginTop="17dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewIndian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/indian"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="10dp"
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sandwichFrame"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@+id/indianFrame"
+        app:layout_constraintTop_toBottomOf="@+id/locationBar"
+        android:layout_margin="5dp"
+        android:paddingBottom="3dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewSandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sandwiches"
+            android:layout_marginTop="17dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewSandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sandwich"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="1dp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/deliFrame"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:paddingBottom="3dp"
+        app:layout_constraintStart_toEndOf="@+id/sandwichFrame"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtn">
+
+        <ImageView
+            android:id="@+id/imageViewDeli"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/deli" />
+
+        <TextView
+            android:id="@+id/textViewDeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="1dp"
+            android:text="@string/deli" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

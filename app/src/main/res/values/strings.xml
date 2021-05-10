@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Eat By</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="button">Button</string>
+    <string name="linkableRegister"><u>Register</u></string>
+    <string name="log_out">Log Out</string>
+    <string name="powered_by">Powered By</string>
+    <string name="want_to_know_more_about_us">Want to know more about us?</string>
+    <string name="click_here"><u>Click Here</u></string>
+    <string name="indian_chinese_italian_pizza_and_many_more">Indian, Chinese, Italian, Pizza and many more...</string>
+    <string name="search">Search for restaurants</string>
+    <string name="your_favorite_cuisines_are_one_click_away">Your favorite cuisines are one click away</string>
+    <string name="take_photo">Take photo</string>
+    <string name="select_image_from_album">Select image from album</string>
+    <string name="dont_want_to_register_sign_up_with_google">Dont want to register? Sign Up with Google</string>
+    <string name="search_for_friends">My Friends</string>
+    <string name="see_other_users_opinion_and_chat_with_them">See other users opinion and chat with them</string>
+    <string name="add_bio">Add Bio</string>
+    <string name="user_profile">User Profile</string>
+    <string name="profile">Profile</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="anything">anything</string>
+    <string name="account"><u>Account</u></string>
+    <string name="phone_no">Phone No.</string>
+    <string name="search_here">Search Here</string>
+    <string name="justSearch">Search</string>
+    <string name="no_such_user_displayed">No such user displayed</string>
+    <string name="search_users">Search users</string>
+    <string name="favorites">Favorites</string>
+    <string name="about_yourself">about yourself or your fav food</string>
+    <string name="save">save</string>
+    <string name="search_restaurants">Search Restaurants</string>
+    <string name="title_activity_restaurant_list">RestaurantList</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="location">Location</string>
+    <string name="deli">Deli</string>
+    <string name="sandwich">Sandwich</string>
+    <string name="indian">Indian</string>
+    <string name="pizza">Pizza</string>
+    <string name="chinese">Chinese</string>
+    <string name="burger">Burger</string>
+    <string name="reviews">We value your reviews</string>
+    <string name="share_your_thoughts_below">Share your thoughts below</string>
+    <string name="submit">Submit</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="clear_all">Clear All</string>
+    <string name="recommended_users">Recommended Users</string>
+</resources>

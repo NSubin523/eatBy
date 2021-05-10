@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitesmoke"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewReview"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/restaurantNameReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReview"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBarReview"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:rating="4.5"
+        android:stepSize="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReview"
+        app:layout_constraintTop_toBottomOf="@+id/restaurantNameReview" />
+
+    <TextView
+        android:id="@+id/tvReviewComment"
+        android:layout_width="252dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReview"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBarReview" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonDelete"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/yellow"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/restaurantNameReview"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true"
+        app:fabSize="mini"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

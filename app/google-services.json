@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602211877532",
+    "project_id": "eat-by-eac6e",
+    "storage_bucket": "eat-by-eac6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602211877532:android:d13cc1f51eba8d53c76359",
+        "android_client_info": {
+          "package_name": "com.example.eatby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602211877532-ajvktdg09tu7mugttkm3ktk986dqgtg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVrzuEg-KAzOwflm0xTl6r9Twv1cEGfGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602211877532-ajvktdg09tu7mugttkm3ktk986dqgtg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

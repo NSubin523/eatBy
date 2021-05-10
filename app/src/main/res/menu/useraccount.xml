@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/verifyAccount"
+        android:orderInCategory="100"
+        android:title="@string/verify_account"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/usersFriends"
+        android:orderInCategory="100"
+        android:title="@string/recommended_users"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/userFavorites"
+        android:orderInCategory="100"
+        android:title="@string/favorites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myReviews"
+        android:orderInCategory="100"
+        android:title="@string/my_reviews"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/signOut"
+        android:orderInCategory="100"
+        android:title="@string/log_out"
+        app:showAsAction="never" />
+</menu>
